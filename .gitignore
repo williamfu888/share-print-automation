@@ -1,0 +1,3 @@
+node_modules
+*splunkLogFile.json
+*package-lock.json

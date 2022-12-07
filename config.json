@@ -1,0 +1,36 @@
+{
+  "default":{
+    "baseHost":"integration.familysearch.org",
+    "beforeLaunchLogin": false,
+    "devKey":"YTAyZjEwMDAwMFE2VURwQUFO",
+    "displayInfo": false,
+    "notEC" : true,
+    "globalTimeout":20000,
+    "ignoreSynchronization": true,
+    "localCode" : false,
+    "logToSplunk": false,
+    "language": ["zh"],
+    "license": "BSD-2-Clause",
+    "overrideByCss":true,
+    "maximizeWindow": false,
+    "runInParallel":true,
+    "services": ["chromedriver"],
+    "suites" : {
+      "all" : ["./test/specs/chinese.js"]
+    },
+    "exclude": [],
+    "resolution": "1920x1080",
+    "environment":[{
+      "platform": "Windows 10",
+      "browserName": "chrome",
+      "browserVersion": "latest-1"
+    }],
+    "framework": "mocha",
+    "mochaOpts": {
+      "timeout": 90000,
+      "useColors": true,
+      "bail": false,
+      "retries": 3
+    }
+  }
+}
